@@ -12,6 +12,13 @@ class Modelo extends Template
     }
 
 
+    public function find($id)
+    {
+        $this->query = "SELECT COUNT(equ_IdEquipo) FROM Equipos WHERE equ_eqm_IdModeloEquipo = ".$id;
+        $this->table = $this->conn->query($this->query);
+        return json_encode($this->table->fetch(PDO::FETCH_NUM));
+    }
+
     public function create($value)
     {
         $this->table = $this->conn->query("SELECT MAX(eqm_IdModeloEquipo) as valor FROM EquiposModelo");
@@ -36,8 +43,11 @@ class Modelo extends Template
 
     public function delete()
     {
+        $this->query = "DELETE FROM Equipos WHERE equ_eqm_IdModeloEquipo = ".$this->id;
+        $this->table = $this->conn->query($this->query);
         $this->query = "DELETE FROM EquiposModelo WHERE eqm_IdModeloEquipo = ".$this->id;
         $result = $this->table = $this->conn->query($this->query);
+
         $this->query = self::DEFAULT_QUERY;
         return json_encode($result);
     }

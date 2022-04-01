@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b3ab8a2-912f-4a2f-8beb-ed1fd171d2eb" name="Default Changelist" comment="" />
+    <list default="true" id="4b3ab8a2-912f-4a2f-8beb-ed1fd171d2eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/find.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Categoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Categoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Estado.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Estado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Modelo.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +40,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="26Zska4pdePqx9jvCQPK9i9QfT3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,6 +53,7 @@
     <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -63,6 +74,7 @@
       <workItem from="1647642591347" duration="18021000" />
       <workItem from="1647897614393" duration="62260000" />
       <workItem from="1648503708620" duration="1679000" />
+      <workItem from="1648841166201" duration="4325000" />
     </task>
     <servers />
   </component>
@@ -78,11 +90,12 @@
       <screen x="-1680" y="25" width="1680" height="1020" />
     </state>
     <state x="-1053" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/-1680.25.1680.1020@0.0.1536.834" timestamp="1648124160878" />
-    <state x="615" y="154" key="NewPhpFileDialog" timestamp="1648302355929">
+    <state x="615" y="154" key="NewPhpFileDialog" timestamp="1648842451654">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="-1007" y="213" key="NewPhpFileDialog/0.0.1536.834/-1680.25.1680.1020@-1680.25.1680.1020" timestamp="1648238642728" />
     <state x="615" y="154" key="NewPhpFileDialog/0.0.1536.834/-1680.25.1680.1020@0.0.1536.834" timestamp="1648302355929" />
+    <state x="615" y="154" key="NewPhpFileDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1648842451654" />
     <state x="-1144" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1647642593888">
       <screen x="-1680" y="25" width="1680" height="1020" />
     </state>
