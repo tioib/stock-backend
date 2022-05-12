@@ -188,6 +188,20 @@ class Equipo
         return json_encode($result);
     }
 
+    public function getLastSerial($modelo)
+    {
+        $this->table = $this->conn->query("SELECT MAX(equ_IdEquipo) as valor FROM Equipos WHERE equ_eqm_IdModeloEquipo = ".$modelo);
+        $result = $this->table->fetch(PDO::FETCH_ASSOC);
+        if($result["valor"] > 0)
+        {
+            $this->table = $this->conn->query("SELECT equ_NroSerie as valor FROM Equipos WHERE equ_IdEquipo = ".$result["valor"]);
+            $result = explode("-",$this->table->fetch(PDO::FETCH_ASSOC)["valor"]);
+            return intval($result[count($result)-1]);
+        }
+        return 0;
+        //$this->id = intval()+1;
+    }
+
     public function getLastId()
     {
         $this->table = $this->conn->query("SELECT MAX(equ_IdEquipo) as valor FROM Equipos");

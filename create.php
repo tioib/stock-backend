@@ -16,17 +16,24 @@ if($_GET["cual"] === "equipo")
     require "models/Equipo.php";
     $equipo = new Equipo(Connection::Connect());
     $equipo->getLastId();
-    echo $equipo->create(
-        array($equipo->id,
-            $_GET["categoria"],
-            $_GET["modelo"],
-            $_GET["serial"],
-            $_GET["estado"],
-            date("Ymd H:i"),
-            $_GET["mac"],
-            $_GET["info"]
-        )
-    );
+    
+    $last = $equipo->getLastSerial($_GET["modelo"]);
+    for($i = $last+1; $i <= $last+intval($_GET["cant"]); $i++)
+    {
+        if($equipo->create(
+            array($equipo->id,
+                $_GET["categoria"],
+                $_GET["modelo"],
+                $_GET["serial"]."-".$i,
+                $_GET["estado"],
+                date("Ymd H:i"),
+                $_GET["mac"],
+                $_GET["info"]
+            ))) $equipo->getLastId();
+        else exit("false");
+    
+    }
+    echo true;
 }
 else
 {
